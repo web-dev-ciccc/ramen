@@ -22,12 +22,13 @@ body {
 }
 
 header {
+    width: 100%;
     background-color: black;
 }
 
 #header-content {
     height: 4rem;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
 }
 
@@ -49,4 +50,17 @@ footer {
     height: 5rem;
     color: white;
     font-family: 'Lora', serif;
+}
+
+/*
+ * Mobile
+ */
+@media screen and (max-width:768px) {
+    header {
+        padding: 0 10px;
+    }
+    footer {
+        padding: 0 10px;
+        font-size: 12px;
+    }
 }
