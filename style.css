@@ -64,3 +64,136 @@ footer {
         font-size: 12px;
     }
 }
+
+/*********************
+contact and location start
+**********************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    background: #eee;
+}
+
+div.contact_form {
+    width: 50%;
+    height: 450px;
+}
+
+div.contact_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 0.8rem;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.form-style {
+	margin:10px auto;
+	max-width: 80%;
+	padding: 20px 12px 10px 10px;
+	font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+.form-style li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style input[type=text], 
+.form-style input[type=email],
+textarea{
+	box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	outline: none;	
+}
+.form-style input[type=text]:focus, 
+.form-style input[type=email]:focus,
+.form-style textarea:focus {
+	box-shadow: 0 0 8px #88D5E9;
+	border: 1px solid #88D5E9;
+}
+.form-style .field-divided{
+	width: 49%;
+}
+
+.form-style .field-long{
+	width: 100%;
+}
+
+.form-style .field-textarea{
+	height: 100px;
+}
+.form-style input[type=submit], .form-style input[type=button]{
+	background: #4B99AD;
+	padding: 8px 15px 8px 10px;
+	border: none;
+	color: #fff;
+}
+.form-style input[type=submit]:hover, .form-style input[type=button]:hover{
+	background: #4691A4;
+	box-shadow:none;
+}
+.form-style .required{
+	color:red;
+}
+
+
+.location {
+    width: 50%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 740px) {
+    h3.address {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 648px) {
+    h3.address {
+        font-size: 0.65rem;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .form-style {
+        margin-left: 3px;
+    }
+
+    .form-style .field-divided{
+        width: 100%;
+    }
+
+}
+
+
+
+/*********************
+contact and location end
+**********************/
