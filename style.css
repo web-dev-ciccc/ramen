@@ -147,31 +147,46 @@ About start
     }
 }
 @media screen and (max-width: 1000px) {
+    #pictures{
+        margin-top: 20px;
+    }
+    #story{
+        padding-left: 80px;
+
+    }
     #pic1, #pic2, #pic3{
         margin-left: 70px;
         height: 170px;
-      
     }
     #first, #second{
         font-size: 1em;
     }
 }
 @media screen and (max-width: 740px) {
+    #pictures{
+        margin-top: 20px;
+    }
+    #story{
+        padding-left: 60px;
+    }
     #pic1, #pic2, #pic3{
         margin-left: 50px;
         height: 150px;
     }
     #first, #second{
-        font-size: 0.8em;
+        font-size: 0.85em;
     }
 }
 @media screen and (max-width: 620px) {
+    #story{
+        padding-left: 40px;
+    }
     #pic1, #pic2, #pic3{
         margin-left: 30px;
         height: 125px;
     }
     #first, #second{
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     #pic2{
         margin-top: 20px;
@@ -179,6 +194,92 @@ About start
     #pic3{
         margin-top: 0px;
     }
+}
+@media screen and (max-width: 530px) {
+    #story{
+        padding-left: 40px;
+    }
+    #pic1, #pic2, #pic3{
+        margin-left: 30px;
+        height: 115px;
+        border-radius: 20px;
+    }
+    #first, #second{
+        font-size: 0.74em;
+    }
+    #pic2{
+        margin-top: 20px;
+    }
+    #pic3{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 460px) {
+    #story{
+        padding-left: 20px;
+    }
+    #pic1, #pic2, #pic3{
+        margin-left: 0px;
+        height: 120px;
+        border-radius: 20px;
+    }
+    #picture2{
+        margin-left: 0px;
+    }
+    #first, #second{
+        font-size: 0.7em;
+        width: 90%;
+    }
+    #pic2{
+        margin-top: 20px;
+    }
+    #pic3{
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #story{
+        padding-left: 10px;
+        grid-row-gap: 0px;
+    }
+    #pic1, #pic3, #pic3{
+        margin-left: 0px;
+        height: 100px;
+        border-radius: 20px;
+    }
+    #picture2{
+        margin-left: 0px;
+    }
+    #first, #second{
+        font-size: 0.7em;
+        width: 95%
+    }
+    #pic2{
+        margin-top: 20px;
+    }
+    #pic3{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 340px) {
+    #story{
+        padding-left: 10px;
+        grid-row-gap: 0px;
+    }
+    #pic1, #pic3, #pic3{
+        margin-left: 0px;
+        height: 90px;
+        border-radius: 20px;
+    }
+    #picture2{
+        margin-left: 0px;
+    }
+    #first, #second{
+        font-size: 0.65em;
+        width: 95%
+    }
+
 }
 
 /*********************
