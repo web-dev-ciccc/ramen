@@ -289,6 +289,10 @@ textarea{
     justify-content: center;
 }
 
+.location2 {
+    display: none;
+}
+
 @media screen and (max-width: 740px) {
     h3.address {
         font-size: 0.7rem;
@@ -312,6 +316,45 @@ textarea{
 
 }
 
+@media screen and (max-width: 515px) {
+    .form-style {
+        margin-left: 3px;
+    }
+
+    .form-style .field-divided{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .form-style {
+        /* margin-left: 3px; */
+        font-size: 0.5rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .form-style .field-divided{
+        width: 100%;
+    }
+
+    div.contact_form {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .location {
+        display: none;
+        width: 0%;
+    }
+
+    .location2 {
+        display: block;
+        width: 100%;
+        height: 420px;
+    }
+}
 
 
 /*********************
