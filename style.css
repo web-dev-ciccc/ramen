@@ -66,6 +66,123 @@ footer {
 }
 
 /*********************
+About start
+**********************/
+.about{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: "story pictures";
+    background: url("img/backgroundabout.jpg") center no-repeat   ;
+}
+#story{
+    grid-row-gap: 40px;
+    padding-left: 90px;
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "first"
+                         "second";
+}
+#first{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: first;
+    height: 60%;
+    width: 80%;
+    font-size: 1.6em;
+    text-align: justify;
+    color: white;
+}
+#second{
+    font-family: Arial, Helvetica, sans-serif;
+    grid-area: second;
+    height: 40%;
+    width: 80%;
+    font-size: 1.6em;
+    text-align: justify;
+    color: white;
+}
+#pictures{
+    display: grid;
+    grid-column: auto;
+    grid-template-rows: minmax(150px, auto) minmax(150px, auto) minmax(150px, auto);
+    grid-template-areas: "picture1"
+                         "picture2"
+                         "picture3";    
+}
+#pic1, #pic2, #pic3{
+    height: 230px;
+    border-radius: 50px;
+}
+#pic1{
+    filter: grayscale(100%);
+    margin-left: 300px;
+}
+#pic2{
+    height: 300px;
+}
+#pic3{
+    margin-left: 300px;
+    margin-top: -20px;
+}
+#picture2{
+    z-index: 50;
+    margin-top: -40px;
+    margin-left: -50px;
+}
+#picture3{
+    margin-top: -30px;
+}
+
+@media screen and (max-width: 1380px) {
+    #pic1, #pic3{
+        margin-left: 100px;
+    }
+    #first, #second{
+        font-size: 1.3em;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #pic1, #pic2, #pic3{
+        margin-left: 70px;
+        height: 170px;
+      
+    }
+    #first, #second{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 740px) {
+    #pic1, #pic2, #pic3{
+        margin-left: 50px;
+        height: 150px;
+    }
+    #first, #second{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 620px) {
+    #pic1, #pic2, #pic3{
+        margin-left: 30px;
+        height: 125px;
+    }
+    #first, #second{
+        font-size: 0.7em;
+    }
+    #pic2{
+        margin-top: 20px;
+    }
+    #pic3{
+        margin-top: 0px;
+    }
+}
+
+/*********************
+About end
+**********************/
+
+/*********************
 contact and location start
 **********************/
 * {
