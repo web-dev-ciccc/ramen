@@ -63,11 +63,13 @@ footer {
  * Mobile
  */
 @media screen and (max-width:768px) {
-    header {
-        padding: 0 10px;
+    #header-content li:last-child {
+        margin-right: 10px;
+    }
+    #logo {
+        margin-left: 10px;
     }
     footer {
-        padding: 0 10px;
         font-size: 12px;
     }
     #menu img {
