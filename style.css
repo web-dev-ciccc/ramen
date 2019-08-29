@@ -69,6 +69,63 @@ footer {
 }
 
 /*********************
+Main start
+**********************/
+#container{
+    display: flex;
+}
+#video{
+    position: relative;
+    width: 100%;
+    height: 670px;
+}
+#welcome{
+    position: absolute;
+    top: 300px; 
+    left: 340px;
+    z-index: 10;
+    color: white;
+    font-size: 4em;
+    animation-name: title-keyframe;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 2.0s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes title-keyframe {
+    0% {
+        visibility: hidden;
+    }
+    
+    100% {
+        visibility: visible;
+        opacity: 0.8;
+        
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #video{
+        height: 580px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #video{
+        height: 430px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    #video{
+        height: 210px;
+    }
+}
+
+/*********************
+Main end
+**********************/
+/*********************
 About start
 **********************/
 .about{
