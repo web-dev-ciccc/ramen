@@ -81,6 +81,7 @@ Main start
 **********************/
 #container{
     display: flex;
+    background-color: black;
 }
 #video{
     position: relative;
