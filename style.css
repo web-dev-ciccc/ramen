@@ -13,6 +13,10 @@ body {
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .flex-center {
     align-items: center;
 }
@@ -65,6 +69,10 @@ footer {
     footer {
         padding: 0 10px;
         font-size: 12px;
+    }
+    #menu img {
+        width: 100%;
+        margin: 0 auto;
     }
 }
 
@@ -136,6 +144,27 @@ About start
 }
 #picture3{
     margin-top: -30px;
+}
+
+#menu {
+    padding: 20px 0;
+    background-color: black;
+}
+
+#menu .menu-wrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#menu .title {
+    font-size: 20px;
+    color: white;
+}
+
+#menu img {
+    width: 190px;
 }
 
 @media screen and (max-width: 1380px) {
