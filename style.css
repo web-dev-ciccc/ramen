@@ -91,12 +91,12 @@ Main start
     height: 670px;
 }
 #welcome{
+    visibility: hidden;
     position: absolute;
     top: 300px; 
-    left: 340px;
+    left: 310px;
     z-index: 10;
     color: white;
-    font-size: 4em;
     animation-name: title-keyframe;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -106,30 +106,142 @@ Main start
 }
 @keyframes title-keyframe {
     0% {
-        visibility: hidden;
+        visibility: visible;
+        opacity: 0.2;
+        font-size: 0.5em;
     }
-    
-    100% {
+    25%{
+        visibility: visible;
+        opacity: 0.4;
+        font-size: 1em;
+    }
+    50%{
+        visibility: visible;
+        opacity: 0.6;
+        font-size: 2em;
+    }
+    75%{
         visibility: visible;
         opacity: 0.8;
-        
+        font-size: 3em;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        text-shadow: 2px 2px black;
+        font-size: 4em;
     }
 }
 
 @media screen and (max-width: 1024px) {
     #video{
         height: 580px;
+
+    }
+    @keyframes title-keyframe {
+        0% {
+            visibility: visible;
+            opacity: 0.2;
+            font-size: 0.5em;
+        }
+        25%{
+            visibility: visible;
+            opacity: 0.4;
+            font-size: 1em;
+        }
+        50%{
+            visibility: visible;
+            opacity: 0.6;
+            font-size: 2em;
+        }
+        75%{
+            visibility: visible;
+            opacity: 0.8;
+            font-size: 3em;
+        }
+        100% {
+            visibility: visible;
+            opacity: 1;
+            text-shadow: 2px 2px black;
+            font-size: 3em;
+        }
+    }
+    #welcome{
+        left: 170px;
     }
 }
 @media screen and (max-width: 768px) {
     #video{
         height: 430px;
     }
+    @keyframes title-keyframe {
+    0% {
+        visibility: visible;
+        opacity: 0.2;
+        font-size: 0.5em;
+    }
+    25%{
+        visibility: visible;
+        opacity: 0.4;
+        font-size: 1em;
+    }
+    50%{
+        visibility: visible;
+        opacity: 0.6;
+        font-size: 2em;
+    }
+    75%{
+        visibility: visible;
+        opacity: 0.8;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+        text-shadow: 2px 2px black;
+        font-size: 2.5em;
+        }
+    }
+    #welcome{
+        left: 110px;
+        top: 250px;
+    }
 }
 
 @media screen and (max-width: 376px) {
     #video{
         height: 210px;
+    }
+    @keyframes title-keyframe {
+        0% {
+            visibility: visible;
+            opacity: 0.2;
+            font-size: 0.3em;
+        }
+        25%{
+            visibility: visible;
+            opacity: 0.4;
+            font-size: 0.5em;
+        }
+        50%{
+            visibility: visible;
+            opacity: 0.6;
+            font-size: 0.7em;
+        }
+        75%{
+            visibility: visible;
+            opacity: 0.8;
+            font-size: 1em;
+        }
+        100% {
+            visibility: visible;
+            opacity: 1;
+            text-shadow: 2px 2px black;
+            font-size: 1.3em;
+            }
+        }
+    #welcome{
+        left: 50px;
+        top: 150px;
     }
 }
 
